@@ -46,7 +46,7 @@ public class SentenceDetectionPlugin implements FlutterPlugin, MethodCallHandler
       AssetManager assetManager = context.getAssets();
       InputStream inputStream = null;
       try {
-        inputStream = assetManager.open("en-sent.bin");
+        inputStream = assetManager.open("opennlp-en-ud-ewt-sentence.bin");
         SentenceModel model = new SentenceModel(inputStream);
 
         SentenceDetectorME detector = new SentenceDetectorME(model);
