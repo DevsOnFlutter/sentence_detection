@@ -25,8 +25,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 dependencies {
-    //noinspection GradlePath
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api group: "org.apache.opennlp", name: "opennlp-tools", version: "1.9.3"
 }
 
 android {
