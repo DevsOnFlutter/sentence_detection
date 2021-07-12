@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/services.dart';
 import 'package:sentence_detection/sentence_detection.dart';
 
 void main() {
@@ -23,7 +22,9 @@ class _MyAppState extends State<MyApp> {
       k.forEach((element) {
         print(element);
       });
-    } on PlatformException {}
+    } catch (e) {
+      print(e);
+    }
   }
 
   @override
