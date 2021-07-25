@@ -15,7 +15,10 @@ dependencies:
 
 ````dart
 import 'package:sentence_detection/sentence_detection.dart';
-````"This is 1st sentence. This is ";
+````````
+
+### Usages
+
 ````dart
     String paragraph =
         "This is first sentence. I was born in 01.05.2000. This is third sentence";
