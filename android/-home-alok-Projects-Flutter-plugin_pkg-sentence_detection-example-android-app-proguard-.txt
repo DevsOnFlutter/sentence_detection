@@ -1,1 +1,0 @@
-/home/alok/Projects/Flutter/plugin_pkg/sentence_detection/example/android/app/proguard-rules.pro

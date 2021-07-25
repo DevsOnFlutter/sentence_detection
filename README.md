@@ -1,15 +1,23 @@
 # sentence_detection
 
-A new Flutter project.
+A flutter plugin that recognises sentences in paragraphs using [lingpipe NLP](http://www.alias-i.com/lingpipe/).
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+### dependencies
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+````dart
+dependencies:
+  file_manager: ^1.0.0
+````
 
+### import
+
+````dart
+import 'package:sentence_detection/sentence_detection.dart';
+````"This is 1st sentence. This is ";
+````dart
+    String paragraph =
+        "This is first sentence. I was born in 01.05.2000. This is third sentence";
+    List<String> _sentences = await SentenceDetection.getSentences(paragraph);
+````

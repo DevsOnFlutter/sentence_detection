@@ -55,7 +55,6 @@ public class SentenceDetectionPlugin implements FlutterPlugin, MethodCallHandler
 
       for (int sentenceBoundary : sentenceBoundaries) {
         sentEndTok = sentenceBoundary;
-//        System.out.println("SENTENCE "+(i+1)+": ");
         StringBuilder sentOut = new StringBuilder();
         for (int j = sentStartTok; j <= sentEndTok; j++) {
           sentOut.append(tokens[j]).append(whites[j + 1]);

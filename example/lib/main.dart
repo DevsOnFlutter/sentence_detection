@@ -6,9 +6,13 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
   final String text =
-      "Usually Sentence Detection is done before the text is tokenized and that's the way the pre-trained models on the web site are trained, but it is also possible to perform tokenization first and let the Sentence Detector process the already tokenized text. The OpenNLP Sentence Detector cannot identify sentence boundaries based on the contents of the sentence. A prominent example is the first sentence in an article where the title is mistakenly identified to be the first part of the first sentence. Most components in OpenNLP expect input which is segmented into sentences.";
+      "This is first sentence. I was born in 01.05.2000. This is third sentence";
+
+  // Future<List<String>> sentence(String paragraph) async {
+  //   List<String> _sentences = await SentenceDetection.getSentences(paragraph);
+  //   return _sentences;
+  // }
 
   @override
   Widget build(BuildContext context) {
